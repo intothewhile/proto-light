@@ -99,11 +99,22 @@ h1 {
 .col span {
 	display: block;
 	position: absolute;
+}
+
+.col span.photo {
 	top:0;
 	left: 0;
 	width: 100%;
 	height: 100%;
 	overflow: hidden;
+}
+
+.col span.title {
+	bottom:5vh;
+	left:5vh;
+	font-weight: 700;
+	font-size: 1.8rem;
+	text-transform: uppercase;
 }
 
 .col span img {
