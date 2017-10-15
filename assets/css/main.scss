@@ -54,16 +54,15 @@ h1 {
 .intro {
 	position: relative;
 	height: 100vh;
-	background: #0000CC;
+	background: #000 url(../images/header.jpg) no-repeat 50%;
 	text-align: center;
 }
 
 .intro h1 {
 	position: absolute;
-	top:50%;
+	bottom:10%;
 	left: 0;
 	width: 100%;
-	transform: translateY(-50%);
 }
 
 .item1 {
@@ -75,11 +74,11 @@ h1 {
 }
 
 .item1:first-child {
-	background: #00CC00;
+	background: #000;
 }
 
 .item2:first-child {
-	background: #0000CC;
+	background: #000;
 }
 
 /*  SECTIONS  */
