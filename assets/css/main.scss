@@ -1,5 +1,5 @@
 @import "vars";
-@import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700);
 * {
 	box-sizing: border-box;
 }
@@ -45,10 +45,10 @@ a {
 
 h1 {
 	font-weight: 700;
-	font-size: 1.8rem;
+	font-size: 14rem;
 	display: inline-block;
 	text-transform: uppercase;
-
+	color: #FBBD0A;
 }
 
 .intro {
@@ -60,9 +60,12 @@ h1 {
 
 .intro h1 {
 	position: absolute;
-	bottom:10%;
+	bottom:5%;
 	left: 0;
 	width: 100%;
+	background: linear-gradient(#FCFBF9, #D18236);
+	-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .item1 {
@@ -109,14 +112,15 @@ h1 {
 }
 
 .col span.title {
-	bottom:5vh;
-	left:5vh;
-	font-weight: 700;
-	font-size: 1.8rem;
-	background: #fff;
-	color:#000;
+	bottom:8px;
+	left:0;
+	width: 100%;
+	text-align: center;
+	display: block;
+	font-weight: 300;
+	font-size: 3rem;
+	color:#fff;
 	padding: 1rem;
-	text-transform: uppercase;
 }
 
 .col span img {
