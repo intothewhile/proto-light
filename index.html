@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>light</title>
+  <link rel="stylesheet" href="assets/css/aos.css">
   <link rel="stylesheet" href="assets/css/main.min.css">
   </head>
 
@@ -15,25 +16,25 @@
   <h1>This is a test</h1>
 </div>
 <div class="section group">
-	<div class="col span_2_of_4 item1">
+	<div class="col span_2_of_4 item1" data-aos="fade-up-right">
     <span class="photo"><img src="assets/images/lampe01.jpg" alt=""></span>
 	  <span class="title">Titre de l'article</span>
 	</div>
   <div class="col span_2_of_4 item1">
 	<div class="section group">
-    <div class="col span_2_of_4 item2">
+    <div class="col span_2_of_4 item2" data-aos="fade-up">
       <span class="photo"><img src="assets/images/lampe02.jpg" alt=""></span>
   	  <span class="title">Titre de l'article</span>
   	</div>
-    <div class="col span_2_of_4 item2">
+    <div class="col span_2_of_4 item2" data-aos="fade-up-left">
       <span class="photo"><img src="assets/images/lampe03.jpg" alt=""></span>
   	  <span class="title">Titre de l'article</span>
   	</div>
-    <div class="col span_2_of_4 item2">
+    <div class="col span_2_of_4 item2" data-aos="fade-up">
       <span class="photo"><img src="assets/images/lampe04.jpg" alt=""></span>
   	  <span class="title">Titre de l'article</span>
   	</div>
-    <div class="col span_2_of_4 item2">
+    <div class="col span_2_of_4 item2" data-aos="fade-up-left">
       <span class="photo"><img src="assets/images/lampe05.jpg" alt=""></span>
   	  <span class="title">Titre de l'article</span>
   	</div>
@@ -64,9 +65,15 @@
 
   </main>
   <!--<script src="assets/js/visualizer.js"></script>-->
+  <script src="assets/js/aos.js"></script>
   <script>
   (function(document) {
-
+    AOS.init({
+    				easing: 'ease-out-back',
+            delay: 100,
+    				duration: 1000,
+            disable: 'mobile'
+    			});
 
   })(document);
   </script>
