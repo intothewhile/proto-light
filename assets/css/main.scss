@@ -29,7 +29,7 @@ body {
     overflow-y: auto
 }
 
-body::before {
+/*body::before {
 	content: '';
 	position: absolute;
 	z-index: -1;
@@ -39,7 +39,7 @@ body::before {
 	bottom: 0;
 	background: url(../images/noise.gif);
 	opacity: 0.18;
-}
+}*/
 
 main {
 	position: relative;
@@ -67,7 +67,7 @@ h1 {
 	position: relative;
 	height: 100vh;
 	background: url(../images/intro.png) no-repeat 50%;
-	opacity: 0.5;
+	opacity: 1;
 	text-align: center;
 }
 /*.intro::before {
@@ -86,6 +86,7 @@ h1 {
 	bottom:8%;
 	left: 0;
 	width: 100%;
+	color:#FFC815;
 }
 
 .item1 {
@@ -198,6 +199,64 @@ h1 {
 @media only screen and (max-width: 480px) {
 	.col {  margin: 0; }
 	.span_1_of_4, .span_2_of_4, .span_3_of_4, .span_4_of_4 { width: 100%; }
+}
+
+/* ici */
+.content .item {
+	position: relative;
+	padding: 30px 0;
+}
+
+.content .item .visu {
+	width: 50%;
+	overflow: hidden;
+}
+
+.content .item .txt {
+	width: 40%;
+	position: absolute;
+	top:50%;
+	transform: translateY(-50%);
+}
+
+.content .item .txt h2 {
+	text-transform: uppercase;
+	font-size: 5rem;
+	line-height: 0.4;
+	color:#FFC815;
+}
+
+.content .item .txt p {
+	font-size: 4rem;
+}
+
+.content .item .txt h2,
+.content .item .txt p {
+	display: block;
+}
+
+.content .item.alignright .visu {
+	position: relative;
+	left: 40%;
+}
+
+.content .item.alignright .txt {
+	left: 10%;
+	text-align: right;
+}
+
+.content .item.alignleft .visu {
+	position: relative;
+	left: 10%;
+}
+
+.content .item.alignleft .txt {
+	left: 50%;
+}
+
+.content .item .visu img {
+	display: block;
+	width: 100%;
 }
 
 /* Contact */
