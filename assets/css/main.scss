@@ -66,9 +66,9 @@ h1 {
 .intro {
 	position: relative;
 	height: 100vh;
-	background: url(../images/intro.png) no-repeat 50%;
+	/*background: url(../images/intro.png) no-repeat 50%;
 	background-size: 30%;
-	opacity: 1;
+	opacity: 1;*/
 	text-align: center;
 }
 /*.intro::before {
@@ -88,6 +88,10 @@ h1 {
 	left: 0;
 	width: 100%;
 	color:#FFC815;
+}
+
+.intro h1 img {
+	transform: scale(0.4);
 }
 
 .item1 {
@@ -223,7 +227,7 @@ h1 {
 .content .item .txt h2 {
 	text-transform: uppercase;
 	font-size: 5rem;
-	line-height: 0.4;
+	line-height: 1.2;
 	color:#FFC815;
 }
 
