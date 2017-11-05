@@ -67,6 +67,7 @@ h1 {
 	position: relative;
 	height: 100vh;
 	background: url(../images/intro.png) no-repeat 50%;
+	background-size: 30%;
 	opacity: 1;
 	text-align: center;
 }
@@ -83,7 +84,7 @@ h1 {
 
 .intro h1 {
 	position: absolute;
-	bottom:8%;
+	bottom:4%;
 	left: 0;
 	width: 100%;
 	color:#FFC815;
